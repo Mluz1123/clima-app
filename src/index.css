@@ -1,0 +1,142 @@
+body {
+  font-family: 'Hubballi', cursive;
+  background-color: #f1f5f9;
+  font-size: 1.6rem;
+}
+header {
+  background-color: #0ea5e9;
+  padding: 1.5rem;
+  border-bottom: 1rem solid #0284c7;
+}
+header h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+}
+.dos-columnas {
+  display: grid;
+  gap: 4rem;
+}
+@media (min-width: 768px) {
+  .dos-columnas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+main {
+  margin: 4rem auto;
+  max-width: 1200px;
+}
+.contenedor {
+  margin: 0 auto 2rem auto;
+  border-radius: 0.5rem;
+  background-color: white;
+  padding: 4rem;
+  -webkit-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
+  box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
+  width: 100%;
+}
+form {
+  width: 100%;
+}
+.campo {
+  max-width: 100%;
+  margin: 0 auto 1rem auto;
+}
+.campo label {
+  display: block;
+}
+.campo input,
+.campo select {
+  all: unset;
+  border: 1px solid #cbd5e1;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+input[type='submit'] {
+  background-color: #0ea5e9;
+  margin: 2rem auto 0 auto;
+  display: block;
+  padding: 1rem 3rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border: none;
+  width: 100%;
+  border-radius: 1rem;
+  transition: background-color 0.3s ease;
+}
+@media (min-width: 768px) {
+  input[type='submit'] {
+    max-width: 100%;
+  }
+}
+input[type='submit']:hover {
+  background-color: #0369a1;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #0ea5e9;
+
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+  animation: sk-scaleout 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.clima h2 {
+  text-align: center;
+}
+.clima > p:first-of-type {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+.clima p {
+  text-align: center;
+  margin: 0;
+}
+.clima p span {
+  font-size: 1.5rem;
+  vertical-align: super;
+}
+.temp_min_max {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
